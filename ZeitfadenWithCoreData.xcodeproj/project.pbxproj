@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* ZeitfadenWithCoreDataAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* ZeitfadenWithCoreDataAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		28193060112F816700ECF9B4 /* ZeitfadenWithCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2819305F112F816700ECF9B4 /* ZeitfadenWithCoreData.xcdatamodeld */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		28D801B40F44B63D00FB423F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D801B30F44B63D00FB423F /* CoreData.framework */; };
+		F616CD701243E7AC00FA9B88 /* UploadStationsOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F616CD6F1243E7AC00FA9B88 /* UploadStationsOperation.m */; };
+		F616CD981243F1B600FA9B88 /* AbstractZeitfadenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F616CD971243F1B600FA9B88 /* AbstractZeitfadenViewController.m */; };
+		F616D16E12514BF200FA9B88 /* PeriodOfTime.m in Sources */ = {isa = PBXBuildFile; fileRef = F616D16D12514BF200FA9B88 /* PeriodOfTime.m */; };
+		F616D1EF125A711900FA9B88 /* GroupsRequestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F616D1EE125A711900FA9B88 /* GroupsRequestDelegate.m */; };
+		F616D27B125A780600FA9B88 /* CreateGroupRequestDelgate.m in Sources */ = {isa = PBXBuildFile; fileRef = F616D27A125A780600FA9B88 /* CreateGroupRequestDelgate.m */; };
+		F616D2C4125A885E00FA9B88 /* ModalAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = F616D2C3125A885E00FA9B88 /* ModalAlert.m */; };
+		F616D2E4125BD04800FA9B88 /* RecordingSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F616D2E3125BD04800FA9B88 /* RecordingSettingsViewController.m */; };
+		F616D2E6125BD0B100FA9B88 /* RecordingSettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F616D2E5125BD0B100FA9B88 /* RecordingSettingsView.xib */; };
+		F616D356125E6AE200FA9B88 /* GroupsSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F616D355125E6AE200FA9B88 /* GroupsSelectorViewController.m */; };
+		F616D358125E6B0100FA9B88 /* GroupsSelectorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F616D357125E6B0100FA9B88 /* GroupsSelectorView.xib */; };
+		F616D3981260982F00FA9B88 /* AbstractZeitfadenViewControllerWithTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F616D3971260982F00FA9B88 /* AbstractZeitfadenViewControllerWithTableViewDelegate.m */; };
+		F616D4AC126651DA00FA9B88 /* ApplicationMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = F616D4AB126651DA00FA9B88 /* ApplicationMediator.m */; };
+		F616D4E912678A7000FA9B88 /* LocationRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = F616D4E812678A7000FA9B88 /* LocationRecorder.m */; };
+		F616D67F1273010500FA9B88 /* ZeitfadenApplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F616D67E1273010500FA9B88 /* ZeitfadenApplicationController.m */; };
+		F63C6380122CF566005CD6D0 /* PendingUploadsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F63C637F122CF566005CD6D0 /* PendingUploadsViewController.m */; };
+		F63C6382122CF5B5005CD6D0 /* PendingUploadsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F63C6381122CF5B5005CD6D0 /* PendingUploadsView.xib */; };
+		F63C644A1232B875005CD6D0 /* RecordingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F63C64491232B875005CD6D0 /* RecordingViewController.m */; };
+		F63C644C1232B898005CD6D0 /* RecordingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F63C644B1232B898005CD6D0 /* RecordingView.xib */; };
+		F63C64821233A6F2005CD6D0 /* ZeitfadenService.m in Sources */ = {isa = PBXBuildFile; fileRef = F63C64811233A6F2005CD6D0 /* ZeitfadenService.m */; };
+		F63C64861233ABE2005CD6D0 /* LocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = F63C64851233ABE2005CD6D0 /* LocationService.m */; };
+		F63C64BE1233BC7E005CD6D0 /* LoginRequestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F63C64BD1233BC7E005CD6D0 /* LoginRequestDelegate.m */; };
+		F63C64C31233BD08005CD6D0 /* AbstractRequestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F63C64C21233BD08005CD6D0 /* AbstractRequestDelegate.m */; };
+		F63C64D01233BDEE005CD6D0 /* ZeitfadenServer.m in Sources */ = {isa = PBXBuildFile; fileRef = F63C64CF1233BDEE005CD6D0 /* ZeitfadenServer.m */; };
+		F63C64E5123581DD005CD6D0 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F63C64E4123581DD005CD6D0 /* LoginViewController.m */; };
+		F63C64E7123582E4005CD6D0 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F63C64E6123582E4005CD6D0 /* LoginView.xib */; };
+		F63C6659123D1EF8005CD6D0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F63C6658123D1EF8005CD6D0 /* CoreLocation.framework */; };
+		F63C665B123D1EF8005CD6D0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F63C665A123D1EF8005CD6D0 /* MapKit.framework */; };
+		F63C6776123D3226005CD6D0 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = F63C676D123D3226005CD6D0 /* NSObject+SBJSON.m */; };
+		F63C6777123D3226005CD6D0 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = F63C676F123D3226005CD6D0 /* NSString+SBJSON.m */; };
+		F63C6778123D3226005CD6D0 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = F63C6771123D3226005CD6D0 /* SBJsonBase.m */; };
+		F63C6779123D3226005CD6D0 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F63C6773123D3226005CD6D0 /* SBJsonParser.m */; };
+		F63C677A123D3226005CD6D0 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = F63C6775123D3226005CD6D0 /* SBJsonWriter.m */; };
+		F648D843122BAD6400382F14 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F648D842122BAD6400382F14 /* HomeViewController.m */; };
+		F648D846122BAD7800382F14 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F648D845122BAD7800382F14 /* InfoViewController.m */; };
+		F648D848122BAE0000382F14 /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F648D847122BAE0000382F14 /* HomeView.xib */; };
+		F648D84A122BAE1100382F14 /* InfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F648D849122BAE1100382F14 /* InfoView.xib */; };
+		F6968B5213768F4B009F345F /* PublishStatusSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6968B5113768F4B009F345F /* PublishStatusSelectorViewController.m */; };
+		F6968B541376910A009F345F /* PublishStatusSelectorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6968B531376910A009F345F /* PublishStatusSelectorView.xib */; };
+		F698435A1278CAF700AD6D47 /* LocationUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = F69843591278CAF700AD6D47 /* LocationUploader.m */; };
+		F69843741278CFB300AD6D47 /* UploadSingleStationOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F69843731278CFB300AD6D47 /* UploadSingleStationOperation.m */; };
+		F698461C1283677500AD6D47 /* ZeitfadenStation.m in Sources */ = {isa = PBXBuildFile; fileRef = F698461B1283677500AD6D47 /* ZeitfadenStation.m */; };
+		F69846CA1285C9CF00AD6D47 /* PendingUploadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F69846C91285C9CF00AD6D47 /* PendingUploadCell.m */; };
+		F698472F1285EFE500AD6D47 /* LocationAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = F698472E1285EFE500AD6D47 /* LocationAnnotation.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* ZeitfadenWithCoreDataAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZeitfadenWithCoreDataAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* ZeitfadenWithCoreDataAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZeitfadenWithCoreDataAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* ZeitfadenWithCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZeitfadenWithCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28C3AD890F43EF2300507BA6 /* ZeitfadenWithCoreData.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = ZeitfadenWithCoreData.xcdatamodel; sourceTree = "<group>"; };
+		28D801B30F44B63D00FB423F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* ZeitfadenWithCoreData_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZeitfadenWithCoreData_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* ZeitfadenWithCoreData-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ZeitfadenWithCoreData-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		F616CD6E1243E7AB00FA9B88 /* UploadStationsOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadStationsOperation.h; sourceTree = "<group>"; };
+		F616CD6F1243E7AC00FA9B88 /* UploadStationsOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadStationsOperation.m; sourceTree = "<group>"; };
+		F616CD961243F1B600FA9B88 /* AbstractZeitfadenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractZeitfadenViewController.h; sourceTree = "<group>"; };
+		F616CD971243F1B600FA9B88 /* AbstractZeitfadenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractZeitfadenViewController.m; sourceTree = "<group>"; };
+		F616D13712511BED00FA9B88 /* ZeitfadenWithCoreData 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "ZeitfadenWithCoreData 3.xcdatamodel"; sourceTree = "<group>"; };
+		F616D14712512ABF00FA9B88 /* ZeitfadenWithCoreData 4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "ZeitfadenWithCoreData 4.xcdatamodel"; sourceTree = "<group>"; };
+		F616D16C12514BF200FA9B88 /* PeriodOfTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeriodOfTime.h; sourceTree = "<group>"; };
+		F616D16D12514BF200FA9B88 /* PeriodOfTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeriodOfTime.m; sourceTree = "<group>"; };
+		F616D1ED125A711900FA9B88 /* GroupsRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupsRequestDelegate.h; sourceTree = "<group>"; };
+		F616D1EE125A711900FA9B88 /* GroupsRequestDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupsRequestDelegate.m; sourceTree = "<group>"; };
+		F616D279125A780600FA9B88 /* CreateGroupRequestDelgate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateGroupRequestDelgate.h; sourceTree = "<group>"; };
+		F616D27A125A780600FA9B88 /* CreateGroupRequestDelgate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateGroupRequestDelgate.m; sourceTree = "<group>"; };
+		F616D2C2125A885E00FA9B88 /* ModalAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalAlert.h; sourceTree = "<group>"; };
+		F616D2C3125A885E00FA9B88 /* ModalAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalAlert.m; sourceTree = "<group>"; };
+		F616D2DF125BBE3000FA9B88 /* ZeitfadenWithCoreData 5.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "ZeitfadenWithCoreData 5.xcdatamodel"; sourceTree = "<group>"; };
+		F616D2E2125BD04800FA9B88 /* RecordingSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordingSettingsViewController.h; sourceTree = "<group>"; };
+		F616D2E3125BD04800FA9B88 /* RecordingSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordingSettingsViewController.m; sourceTree = "<group>"; };
+		F616D2E5125BD0B100FA9B88 /* RecordingSettingsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecordingSettingsView.xib; sourceTree = "<group>"; };
+		F616D354125E6AE200FA9B88 /* GroupsSelectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupsSelectorViewController.h; sourceTree = "<group>"; };
+		F616D355125E6AE200FA9B88 /* GroupsSelectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupsSelectorViewController.m; sourceTree = "<group>"; };
+		F616D357125E6B0100FA9B88 /* GroupsSelectorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroupsSelectorView.xib; sourceTree = "<group>"; };
+		F616D3961260982F00FA9B88 /* AbstractZeitfadenViewControllerWithTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractZeitfadenViewControllerWithTableViewDelegate.h; sourceTree = "<group>"; };
+		F616D3971260982F00FA9B88 /* AbstractZeitfadenViewControllerWithTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractZeitfadenViewControllerWithTableViewDelegate.m; sourceTree = "<group>"; };
+		F616D4AA126651DA00FA9B88 /* ApplicationMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationMediator.h; sourceTree = "<group>"; };
+		F616D4AB126651DA00FA9B88 /* ApplicationMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationMediator.m; sourceTree = "<group>"; };
+		F616D4E712678A7000FA9B88 /* LocationRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationRecorder.h; sourceTree = "<group>"; };
+		F616D4E812678A7000FA9B88 /* LocationRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationRecorder.m; sourceTree = "<group>"; };
+		F616D67D1273010500FA9B88 /* ZeitfadenApplicationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZeitfadenApplicationController.h; sourceTree = "<group>"; };
+		F616D67E1273010500FA9B88 /* ZeitfadenApplicationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZeitfadenApplicationController.m; sourceTree = "<group>"; };
+		F63C637E122CF566005CD6D0 /* PendingUploadsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PendingUploadsViewController.h; sourceTree = "<group>"; };
+		F63C637F122CF566005CD6D0 /* PendingUploadsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PendingUploadsViewController.m; sourceTree = "<group>"; };
+		F63C6381122CF5B5005CD6D0 /* PendingUploadsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PendingUploadsView.xib; sourceTree = "<group>"; };
+		F63C64481232B875005CD6D0 /* RecordingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordingViewController.h; sourceTree = "<group>"; };
+		F63C64491232B875005CD6D0 /* RecordingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordingViewController.m; sourceTree = "<group>"; };
+		F63C644B1232B898005CD6D0 /* RecordingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecordingView.xib; sourceTree = "<group>"; };
+		F63C64801233A6F2005CD6D0 /* ZeitfadenService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZeitfadenService.h; sourceTree = "<group>"; };
+		F63C64811233A6F2005CD6D0 /* ZeitfadenService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZeitfadenService.m; sourceTree = "<group>"; };
+		F63C64841233ABE2005CD6D0 /* LocationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationService.h; sourceTree = "<group>"; };
+		F63C64851233ABE2005CD6D0 /* LocationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationService.m; sourceTree = "<group>"; };
+		F63C64BC1233BC7E005CD6D0 /* LoginRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginRequestDelegate.h; sourceTree = "<group>"; };
+		F63C64BD1233BC7E005CD6D0 /* LoginRequestDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginRequestDelegate.m; sourceTree = "<group>"; };
+		F63C64C11233BD08005CD6D0 /* AbstractRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractRequestDelegate.h; sourceTree = "<group>"; };
+		F63C64C21233BD08005CD6D0 /* AbstractRequestDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractRequestDelegate.m; sourceTree = "<group>"; };
+		F63C64CE1233BDEE005CD6D0 /* ZeitfadenServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZeitfadenServer.h; sourceTree = "<group>"; };
+		F63C64CF1233BDEE005CD6D0 /* ZeitfadenServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZeitfadenServer.m; sourceTree = "<group>"; };
+		F63C64E3123581DD005CD6D0 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		F63C64E4123581DD005CD6D0 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		F63C64E6123582E4005CD6D0 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		F63C6658123D1EF8005CD6D0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F63C665A123D1EF8005CD6D0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		F63C676B123D3226005CD6D0 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		F63C676C123D3226005CD6D0 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		F63C676D123D3226005CD6D0 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		F63C676E123D3226005CD6D0 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		F63C676F123D3226005CD6D0 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		F63C6770123D3226005CD6D0 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		F63C6771123D3226005CD6D0 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		F63C6772123D3226005CD6D0 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		F63C6773123D3226005CD6D0 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		F63C6774123D3226005CD6D0 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		F63C6775123D3226005CD6D0 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		F63C6810123D4CB4005CD6D0 /* ZeitfadenWithCoreData 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "ZeitfadenWithCoreData 2.xcdatamodel"; sourceTree = "<group>"; };
+		F648D841122BAD6400382F14 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		F648D842122BAD6400382F14 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		F648D844122BAD7800382F14 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		F648D845122BAD7800382F14 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		F648D847122BAE0000382F14 /* HomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
+		F648D849122BAE1100382F14 /* InfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoView.xib; sourceTree = "<group>"; };
+		F6968B5013768F4B009F345F /* PublishStatusSelectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublishStatusSelectorViewController.h; sourceTree = "<group>"; };
+		F6968B5113768F4B009F345F /* PublishStatusSelectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublishStatusSelectorViewController.m; sourceTree = "<group>"; };
+		F6968B531376910A009F345F /* PublishStatusSelectorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PublishStatusSelectorView.xib; sourceTree = "<group>"; };
+		F698433C1274C6E700AD6D47 /* ZeitfadenWithCoreData 6.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "ZeitfadenWithCoreData 6.xcdatamodel"; sourceTree = "<group>"; };
+		F69843581278CAF700AD6D47 /* LocationUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationUploader.h; sourceTree = "<group>"; };
+		F69843591278CAF700AD6D47 /* LocationUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationUploader.m; sourceTree = "<group>"; };
+		F69843721278CFB300AD6D47 /* UploadSingleStationOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadSingleStationOperation.h; sourceTree = "<group>"; };
+		F69843731278CFB300AD6D47 /* UploadSingleStationOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadSingleStationOperation.m; sourceTree = "<group>"; };
+		F69846031283514500AD6D47 /* ZeitfadenWithCoreData 7.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "ZeitfadenWithCoreData 7.xcdatamodel"; sourceTree = "<group>"; };
+		F698461A1283677500AD6D47 /* ZeitfadenStation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZeitfadenStation.h; sourceTree = "<group>"; };
+		F698461B1283677500AD6D47 /* ZeitfadenStation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZeitfadenStation.m; sourceTree = "<group>"; };
+		F69846C81285C9CF00AD6D47 /* PendingUploadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PendingUploadCell.h; sourceTree = "<group>"; };
+		F69846C91285C9CF00AD6D47 /* PendingUploadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PendingUploadCell.m; sourceTree = "<group>"; };
+		F698472D1285EFE500AD6D47 /* LocationAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationAnnotation.h; sourceTree = "<group>"; };
+		F698472E1285EFE500AD6D47 /* LocationAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationAnnotation.m; sourceTree = "<group>"; };
+		F69847481286AA2E00AD6D47 /* ZeitfadenWithCoreData 8.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "ZeitfadenWithCoreData 8.xcdatamodel"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				28D801B40F44B63D00FB423F /* CoreData.framework in Frameworks */,
+				F63C6659123D1EF8005CD6D0 /* CoreLocation.framework in Frameworks */,
+				F63C665B123D1EF8005CD6D0 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F698461A1283677500AD6D47 /* ZeitfadenStation.h */,
+				F698461B1283677500AD6D47 /* ZeitfadenStation.m */,
+				F616D2C1125A883B00FA9B88 /* UIExtras */,
+				F616D16B12514BA400FA9B88 /* DomainModel */,
+				F63C676A123D3226005CD6D0 /* JSON */,
+				F63C64E212358171005CD6D0 /* ViewController */,
+				F63C647F1233A6DF005CD6D0 /* Services */,
+				F63C646F12339B9A005CD6D0 /* ServerModel */,
+				1D3623240D0F684500981E51 /* ZeitfadenWithCoreDataAppDelegate.h */,
+				1D3623250D0F684500981E51 /* ZeitfadenWithCoreDataAppDelegate.m */,
+				F616CD6E1243E7AB00FA9B88 /* UploadStationsOperation.h */,
+				F616CD6F1243E7AC00FA9B88 /* UploadStationsOperation.m */,
+				F616D67D1273010500FA9B88 /* ZeitfadenApplicationController.h */,
+				F616D67E1273010500FA9B88 /* ZeitfadenApplicationController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* ZeitfadenWithCoreData.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* ZeitfadenWithCoreData_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2819305F112F816700ECF9B4 /* ZeitfadenWithCoreData.xcdatamodeld */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* ZeitfadenWithCoreData-Info.plist */,
+				F648D847122BAE0000382F14 /* HomeView.xib */,
+				F648D849122BAE1100382F14 /* InfoView.xib */,
+				F63C6381122CF5B5005CD6D0 /* PendingUploadsView.xib */,
+				F63C644B1232B898005CD6D0 /* RecordingView.xib */,
+				F63C64E6123582E4005CD6D0 /* LoginView.xib */,
+				F616D2E5125BD0B100FA9B88 /* RecordingSettingsView.xib */,
+				F616D357125E6B0100FA9B88 /* GroupsSelectorView.xib */,
+				F6968B531376910A009F345F /* PublishStatusSelectorView.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				28D801B30F44B63D00FB423F /* CoreData.framework */,
+				F63C6658123D1EF8005CD6D0 /* CoreLocation.framework */,
+				F63C665A123D1EF8005CD6D0 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F616D16B12514BA400FA9B88 /* DomainModel */ = {
+			isa = PBXGroup;
+			children = (
+				F616D16C12514BF200FA9B88 /* PeriodOfTime.h */,
+				F616D16D12514BF200FA9B88 /* PeriodOfTime.m */,
+			);
+			name = DomainModel;
+			sourceTree = "<group>";
+		};
+		F616D2C1125A883B00FA9B88 /* UIExtras */ = {
+			isa = PBXGroup;
+			children = (
+				F616D2C2125A885E00FA9B88 /* ModalAlert.h */,
+				F616D2C3125A885E00FA9B88 /* ModalAlert.m */,
+			);
+			name = UIExtras;
+			sourceTree = "<group>";
+		};
+		F63C646F12339B9A005CD6D0 /* ServerModel */ = {
+			isa = PBXGroup;
+			children = (
+				F63C64C11233BD08005CD6D0 /* AbstractRequestDelegate.h */,
+				F63C64C21233BD08005CD6D0 /* AbstractRequestDelegate.m */,
+				F63C64BC1233BC7E005CD6D0 /* LoginRequestDelegate.h */,
+				F63C64BD1233BC7E005CD6D0 /* LoginRequestDelegate.m */,
+				F63C64CE1233BDEE005CD6D0 /* ZeitfadenServer.h */,
+				F63C64CF1233BDEE005CD6D0 /* ZeitfadenServer.m */,
+				F616D1ED125A711900FA9B88 /* GroupsRequestDelegate.h */,
+				F616D1EE125A711900FA9B88 /* GroupsRequestDelegate.m */,
+				F616D279125A780600FA9B88 /* CreateGroupRequestDelgate.h */,
+				F616D27A125A780600FA9B88 /* CreateGroupRequestDelgate.m */,
+			);
+			name = ServerModel;
+			sourceTree = "<group>";
+		};
+		F63C647F1233A6DF005CD6D0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F63C64801233A6F2005CD6D0 /* ZeitfadenService.h */,
+				F63C64811233A6F2005CD6D0 /* ZeitfadenService.m */,
+				F63C64841233ABE2005CD6D0 /* LocationService.h */,
+				F63C64851233ABE2005CD6D0 /* LocationService.m */,
+				F616D4AA126651DA00FA9B88 /* ApplicationMediator.h */,
+				F616D4AB126651DA00FA9B88 /* ApplicationMediator.m */,
+				F616D4E712678A7000FA9B88 /* LocationRecorder.h */,
+				F616D4E812678A7000FA9B88 /* LocationRecorder.m */,
+				F69843581278CAF700AD6D47 /* LocationUploader.h */,
+				F69843591278CAF700AD6D47 /* LocationUploader.m */,
+				F69843721278CFB300AD6D47 /* UploadSingleStationOperation.h */,
+				F69843731278CFB300AD6D47 /* UploadSingleStationOperation.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		F63C64E212358171005CD6D0 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F698472C1285EF9D00AD6D47 /* PendingUploadsViewController */,
+				F648D841122BAD6400382F14 /* HomeViewController.h */,
+				F648D842122BAD6400382F14 /* HomeViewController.m */,
+				F648D844122BAD7800382F14 /* InfoViewController.h */,
+				F648D845122BAD7800382F14 /* InfoViewController.m */,
+				F63C64481232B875005CD6D0 /* RecordingViewController.h */,
+				F63C64491232B875005CD6D0 /* RecordingViewController.m */,
+				F63C64E3123581DD005CD6D0 /* LoginViewController.h */,
+				F63C64E4123581DD005CD6D0 /* LoginViewController.m */,
+				F616CD961243F1B600FA9B88 /* AbstractZeitfadenViewController.h */,
+				F616CD971243F1B600FA9B88 /* AbstractZeitfadenViewController.m */,
+				F616D2E2125BD04800FA9B88 /* RecordingSettingsViewController.h */,
+				F616D2E3125BD04800FA9B88 /* RecordingSettingsViewController.m */,
+				F616D354125E6AE200FA9B88 /* GroupsSelectorViewController.h */,
+				F616D355125E6AE200FA9B88 /* GroupsSelectorViewController.m */,
+				F616D3961260982F00FA9B88 /* AbstractZeitfadenViewControllerWithTableViewDelegate.h */,
+				F616D3971260982F00FA9B88 /* AbstractZeitfadenViewControllerWithTableViewDelegate.m */,
+				F6968B5013768F4B009F345F /* PublishStatusSelectorViewController.h */,
+				F6968B5113768F4B009F345F /* PublishStatusSelectorViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		F63C676A123D3226005CD6D0 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				F63C676B123D3226005CD6D0 /* JSON.h */,
+				F63C676C123D3226005CD6D0 /* NSObject+SBJSON.h */,
+				F63C676D123D3226005CD6D0 /* NSObject+SBJSON.m */,
+				F63C676E123D3226005CD6D0 /* NSString+SBJSON.h */,
+				F63C676F123D3226005CD6D0 /* NSString+SBJSON.m */,
+				F63C6770123D3226005CD6D0 /* SBJsonBase.h */,
+				F63C6771123D3226005CD6D0 /* SBJsonBase.m */,
+				F63C6772123D3226005CD6D0 /* SBJsonParser.h */,
+				F63C6773123D3226005CD6D0 /* SBJsonParser.m */,
+				F63C6774123D3226005CD6D0 /* SBJsonWriter.h */,
+				F63C6775123D3226005CD6D0 /* SBJsonWriter.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		F698472C1285EF9D00AD6D47 /* PendingUploadsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F69846C81285C9CF00AD6D47 /* PendingUploadCell.h */,
+				F69846C91285C9CF00AD6D47 /* PendingUploadCell.m */,
+				F63C637E122CF566005CD6D0 /* PendingUploadsViewController.h */,
+				F63C637F122CF566005CD6D0 /* PendingUploadsViewController.m */,
+				F698472D1285EFE500AD6D47 /* LocationAnnotation.h */,
+				F698472E1285EFE500AD6D47 /* LocationAnnotation.m */,
+			);
+			name = PendingUploadsViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* ZeitfadenWithCoreData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "ZeitfadenWithCoreData" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZeitfadenWithCoreData;
+			productName = ZeitfadenWithCoreData;
+			productReference = 1D6058910D05DD3D006BFB54 /* ZeitfadenWithCoreData.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = 6UK924PVRU;
+					};
+				};
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ZeitfadenWithCoreData" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* ZeitfadenWithCoreData */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				F648D848122BAE0000382F14 /* HomeView.xib in Resources */,
+				F648D84A122BAE1100382F14 /* InfoView.xib in Resources */,
+				F63C6382122CF5B5005CD6D0 /* PendingUploadsView.xib in Resources */,
+				F63C644C1232B898005CD6D0 /* RecordingView.xib in Resources */,
+				F63C64E7123582E4005CD6D0 /* LoginView.xib in Resources */,
+				F616D2E6125BD0B100FA9B88 /* RecordingSettingsView.xib in Resources */,
+				F616D358125E6B0100FA9B88 /* GroupsSelectorView.xib in Resources */,
+				F6968B541376910A009F345F /* PublishStatusSelectorView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* ZeitfadenWithCoreDataAppDelegate.m in Sources */,
+				28193060112F816700ECF9B4 /* ZeitfadenWithCoreData.xcdatamodeld in Sources */,
+				F648D843122BAD6400382F14 /* HomeViewController.m in Sources */,
+				F648D846122BAD7800382F14 /* InfoViewController.m in Sources */,
+				F63C6380122CF566005CD6D0 /* PendingUploadsViewController.m in Sources */,
+				F63C644A1232B875005CD6D0 /* RecordingViewController.m in Sources */,
+				F63C64821233A6F2005CD6D0 /* ZeitfadenService.m in Sources */,
+				F63C64861233ABE2005CD6D0 /* LocationService.m in Sources */,
+				F63C64BE1233BC7E005CD6D0 /* LoginRequestDelegate.m in Sources */,
+				F63C64C31233BD08005CD6D0 /* AbstractRequestDelegate.m in Sources */,
+				F63C64D01233BDEE005CD6D0 /* ZeitfadenServer.m in Sources */,
+				F63C64E5123581DD005CD6D0 /* LoginViewController.m in Sources */,
+				F63C6776123D3226005CD6D0 /* NSObject+SBJSON.m in Sources */,
+				F63C6777123D3226005CD6D0 /* NSString+SBJSON.m in Sources */,
+				F63C6778123D3226005CD6D0 /* SBJsonBase.m in Sources */,
+				F63C6779123D3226005CD6D0 /* SBJsonParser.m in Sources */,
+				F63C677A123D3226005CD6D0 /* SBJsonWriter.m in Sources */,
+				F616CD701243E7AC00FA9B88 /* UploadStationsOperation.m in Sources */,
+				F616CD981243F1B600FA9B88 /* AbstractZeitfadenViewController.m in Sources */,
+				F616D16E12514BF200FA9B88 /* PeriodOfTime.m in Sources */,
+				F616D1EF125A711900FA9B88 /* GroupsRequestDelegate.m in Sources */,
+				F616D27B125A780600FA9B88 /* CreateGroupRequestDelgate.m in Sources */,
+				F616D2C4125A885E00FA9B88 /* ModalAlert.m in Sources */,
+				F616D2E4125BD04800FA9B88 /* RecordingSettingsViewController.m in Sources */,
+				F616D356125E6AE200FA9B88 /* GroupsSelectorViewController.m in Sources */,
+				F616D3981260982F00FA9B88 /* AbstractZeitfadenViewControllerWithTableViewDelegate.m in Sources */,
+				F616D4AC126651DA00FA9B88 /* ApplicationMediator.m in Sources */,
+				F616D4E912678A7000FA9B88 /* LocationRecorder.m in Sources */,
+				F616D67F1273010500FA9B88 /* ZeitfadenApplicationController.m in Sources */,
+				F698435A1278CAF700AD6D47 /* LocationUploader.m in Sources */,
+				F69843741278CFB300AD6D47 /* UploadSingleStationOperation.m in Sources */,
+				F698461C1283677500AD6D47 /* ZeitfadenStation.m in Sources */,
+				F69846CA1285C9CF00AD6D47 /* PendingUploadCell.m in Sources */,
+				F698472F1285EFE500AD6D47 /* LocationAnnotation.m in Sources */,
+				F6968B5213768F4B009F345F /* PublishStatusSelectorViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ADDITIONAL_SDKS = "";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ZeitfadenWithCoreData_Prefix.pch;
+				INFOPLIST_FILE = "ZeitfadenWithCoreData-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/JSON/iphoneos.sdk/usr/local/lib\"",
+					"\"$(SRCROOT)/JSON/iphonesimulator.sdk/usr/local/lib\"",
+					"\"$(SRCROOT)/JSON/macosx.sdk/usr/local/lib\"",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = ZeitfadenWithCoreData;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ZeitfadenWithCoreData_Prefix.pch;
+				INFOPLIST_FILE = "ZeitfadenWithCoreData-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/JSON/iphoneos.sdk/usr/local/lib\"",
+					"\"$(SRCROOT)/JSON/iphonesimulator.sdk/usr/local/lib\"",
+					"\"$(SRCROOT)/JSON/macosx.sdk/usr/local/lib\"",
+				);
+				PRODUCT_NAME = ZeitfadenWithCoreData;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ADDITIONAL_SDKS = "";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ADDITIONAL_SDKS = "";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "ZeitfadenWithCoreData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ZeitfadenWithCoreData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2819305F112F816700ECF9B4 /* ZeitfadenWithCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				28C3AD890F43EF2300507BA6 /* ZeitfadenWithCoreData.xcdatamodel */,
+				F63C6810123D4CB4005CD6D0 /* ZeitfadenWithCoreData 2.xcdatamodel */,
+				F616D13712511BED00FA9B88 /* ZeitfadenWithCoreData 3.xcdatamodel */,
+				F616D14712512ABF00FA9B88 /* ZeitfadenWithCoreData 4.xcdatamodel */,
+				F616D2DF125BBE3000FA9B88 /* ZeitfadenWithCoreData 5.xcdatamodel */,
+				F698433C1274C6E700AD6D47 /* ZeitfadenWithCoreData 6.xcdatamodel */,
+				F69846031283514500AD6D47 /* ZeitfadenWithCoreData 7.xcdatamodel */,
+				F69847481286AA2E00AD6D47 /* ZeitfadenWithCoreData 8.xcdatamodel */,
+			);
+			currentVersion = F69847481286AA2E00AD6D47 /* ZeitfadenWithCoreData 8.xcdatamodel */;
+			path = ZeitfadenWithCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
