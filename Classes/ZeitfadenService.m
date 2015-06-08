@@ -84,7 +84,6 @@
 {
 	//NSString *email = [[notification userInfo] objectForKey:@"email"];
 	NSLog(@"notified about succesfull login");
-	[self loadGroups];
 }
 
 - (void)startLocationService
@@ -188,16 +187,7 @@
 	return [zeitfadenServer hasValidLogin];
 }
 
-- (void) createGroup:(NSString *)groupName
-{
-	[zeitfadenServer createGroup:groupName];
-}
 
-- (void)loadGroups
-{
-	[zeitfadenServer loadGroups];
-	
-}
 
 
 

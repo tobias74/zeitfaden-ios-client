@@ -24,8 +24,6 @@
 - (IBAction) showRecordingView:(id)sender;
 - (IBAction) showInfoView:(id)sender;
 - (IBAction) showLoginView;
-- (IBAction) loadGroups:(id)sender;
-- (IBAction) createGroup:(id)sender;
 - (IBAction) showRecordingSettingsView:(id)sender;
 - (void) actUpponChangedLogin:(NSNotification *)notification;
 - (void) performLogout;

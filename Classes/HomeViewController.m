@@ -101,10 +101,6 @@
 }
 
 
-- (IBAction)loadGroups:(id)sender
-{
-	[zeitfadenService loadGroups];
-}
 
 - (IBAction)showPendingUploads:(id)sender
 {

@@ -55,7 +55,7 @@
 {
 	LoginRequestDelegate *myDelegate = [[LoginRequestDelegate alloc] initWithContext:self];
 	
-	NSString *url = @"http://livetest.zeitfaden.com/user/login";
+	NSString *url = @"http://api.zeitfaden.com/user/login";
 	NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL: [NSURL URLWithString: url]];
 	[request setHTTPMethod:@"POST"];
 	
@@ -84,7 +84,7 @@
 	NSLog(@"sending logout in srver");
 	LoginRequestDelegate *myDelegate = [[LoginRequestDelegate alloc] initWithContext:self];
 	
-	NSString *url = @"http://livetest.zeitfaden.com/user/logout";
+	NSString *url = @"http://api.zeitfaden.com/user/logout";
 	NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL: [NSURL URLWithString: url]];
 	[request setHTTPMethod:@"POST"];
 	
@@ -116,60 +116,8 @@
 	}
 }
 
-- (void) createGroup:(NSString *)groupName
-{
-	CreateGroupRequestDelgate *myDelegate = [[CreateGroupRequestDelgate alloc] initWithContext:self];
-	
-	NSString *url = @"http://livetest.zeitfaden.com/request.php?controller=group&action=create";
-	NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL: [NSURL URLWithString: url]];
-	[request setHTTPMethod:@"POST"];
-	
-	NSString *stringBoundary = [NSString stringWithString:@"0xKhTmLbOuNdArY"];
-	NSString *contentType = [NSString stringWithFormat:@"multipart/form-data; boundary=%@",stringBoundary];
-	[request addValue:contentType forHTTPHeaderField:@"Content-Type"];
-	
-	NSMutableData *postBody = [NSMutableData data];
-	
-	
-	[self appendData:groupName forParameter:@"description" toPostBody:postBody usingBoundary:stringBoundary];
-	
-	
-	[postBody appendData:[[NSString stringWithFormat:@"\r\n--%@\r\n",stringBoundary] dataUsingEncoding:NSUTF8StringEncoding]];
-	
-	[request setHTTPBody: postBody];
-	
-	NSURLConnection *conn = [NSURLConnection connectionWithRequest: request delegate:myDelegate];
-	[conn retain];
-	
-	
-}
 
 
-- (void) loadGroups
-{
-	GroupsRequestDelegate *myDelegate = [[GroupsRequestDelegate alloc] initWithContext:self];
-	
-	NSString *url = @"http://livetest.zeitfaden.com/request.php?controller=group&action=getAll";
-	NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL: [NSURL URLWithString: url]];
-	[request setHTTPMethod:@"POST"];
-	
-	NSString *stringBoundary = [NSString stringWithString:@"0xKhTmLbOuNdArY"];
-	NSString *contentType = [NSString stringWithFormat:@"multipart/form-data; boundary=%@",stringBoundary];
-	[request addValue:contentType forHTTPHeaderField:@"Content-Type"];
-	
-	NSMutableData *postBody = [NSMutableData data];
-	
-	
-	
-	[postBody appendData:[[NSString stringWithFormat:@"\r\n--%@\r\n",stringBoundary] dataUsingEncoding:NSUTF8StringEncoding]];
-	
-	[request setHTTPBody: postBody];
-	
-	NSURLConnection *conn = [NSURLConnection connectionWithRequest: request delegate:myDelegate];
-	[conn retain];
-	
-	
-}
 
 
 - (void)appendData:(NSString *)dataString forParameter:(NSString *)parameterName toPostBody:(NSMutableData *)postBody usingBoundary:(NSString *)stringBoundary
@@ -196,7 +144,7 @@
 		actionName = @"update";
 	}
 
-	NSString *url = [NSString stringWithFormat: @"http://livetest.zeitfaden.com/station/%@", actionName];
+	NSString *url = [NSString stringWithFormat: @"http://api.zeitfaden.com/station/%@", actionName];
 	
 	NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL: [NSURL URLWithString: url]];
 	[request setHTTPMethod:@"POST"];
@@ -234,15 +182,13 @@
 	}
 	
 	
-	for (NSManagedObject *group in [managedStation valueForKey:@"assignedToGroups"])
-	{
-		[self appendData:[NSString stringWithFormat:@"%@", [group valueForKey:@"groupId"]] forParameter:@"groupIds[]" toPostBody: postBody usingBoundary:stringBoundary];
-	}
 	
 	
 	NSString *mimeType = [managedStation valueForKey:@"attachmentMimeType"];
 	if ( ([mimeType isEqualToString:@"image/jpeg"]) || ([mimeType isEqualToString:@"video/mpeg"]))
 	{
+        NSLog(@"Wedo yesyes have attachment!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! look into it!!!!!!!!!!!!!!!!!!!");
+        
 		[postBody appendData:[[NSString stringWithFormat:@"\r\n--%@\r\n",stringBoundary] dataUsingEncoding:NSUTF8StringEncoding]];
 		[postBody appendData:[[NSString stringWithString:@"Content-Disposition:form-data; name=\"uploadFile\";filename=\"zeitfaden_attachment.bin\"\r\n"] dataUsingEncoding:NSUTF8StringEncoding]];
 		[postBody appendData:[[NSString stringWithFormat:@"Content-Type: %@\r\n\r\n",mimeType] dataUsingEncoding:NSUTF8StringEncoding]];
@@ -252,7 +198,7 @@
 	}
 	else 
 	{
-		NSLog(@"Wedo not have attachment");
+		NSLog(@"Wedo not have attachment!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! is this wanted????????????????????????");
 	}
 
 	

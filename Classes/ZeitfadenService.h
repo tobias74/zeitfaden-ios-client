@@ -51,8 +51,6 @@
 - (void)logout;
 - (id)getUserDefaultForKey:(NSString *)key;
 - (void)setUserDefault:(id)value forKey:(NSString *)key;
-- (void) loadGroups;
-- (void) createGroup:(NSString *)groupName;
 - (void)observeLoginChanges:(id)observer;
 - (void)stopObservingLoginChanges:(id)observer;
 - (BOOL)hasValidLogin;

@@ -21,8 +21,6 @@
 - (void)appendData:(NSString *)dataString forParameter:(NSString *)parameterName toPostBody:(NSMutableData *)postBody usingBoundary:(NSString *)stringBoundary;
 - (BOOL)uploadStation:(id)managedStation;
 - (void)login:(NSString *)email withPassword:(NSString *)password;
-- (void)loadGroups;
-- (void)createGroup:(NSString *)groupName;
 - (void)logout;
 - (BOOL)hasValidLogin;
 - (void)updateLoginUserEmail:(NSString *)email;
