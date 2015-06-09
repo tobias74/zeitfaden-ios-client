@@ -1,2 +1,3 @@
 # zeitfaden-ios-client
-some
+
+recent updates to api-url
